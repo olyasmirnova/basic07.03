@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('../font/opensans-italic-variablefont_wdthwght-webfont.woff2') format('woff2'),
+         url('../font/opensans-italic-variablefont_wdthwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../font/opensans-variablefont_wdthwght-webfont.woff2') format('woff2'),
+         url('../font/opensans-variablefont_wdthwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px/20px 'open_sansregular';
+    background: #fff;
+}
+
+.wrapper {
+    margin: 20px auto;
+    padding: 40px;
+    width: 400px;
+    background: #fff;
+    border: 2px solid green;
+    border-radius: 5px;
+    background: #bcefc4;
+}
+
+.row {
+    padding: 0 0 20px;
+    position: relative;
+}
+
+.row-box {
+    position: relative;
+    display: flex;
+    margin: 0;
+    padding: 0 0 30px;
+}
+
+.row-select {
+    background: #fff;
+}
+
+.radio-box {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.label-city {
+    margin-right: 15px;
+}
+
+.label-male {
+    padding: 0 0 0 40px;
+    position: relative;
+}
+
+.label-male::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 25px;
+    height: 12px;
+    background: lightgray;
+    border: 1px solid gray;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.label-male::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background: black;
+    transition: 0.5s ease-in-out;
+}
+
+.radio-box:checked + .label-male::after {
+    top: 4px;
+    left: 17px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid black;
+}
+
+.radio-box:checked + .label-male::before {
+    background: #74bd7f;
+}
+
+.checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.label {
+    padding: 0 0 0 30px;
+    position: relative;
+}
+
+.label::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid blue;
+    border-radius: 2px;
+    background: #fff;
+}
+
+.label::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    width: 13px;
+    height: 5px;
+    border-left: 2px solid blue;
+    border-bottom: 2px solid blue;
+    transform: rotate(-45deg);
+    display: none;
+}
+
+.checkbox:checked + .label::after {
+    display: block;
+}
+
+.jcf-select {
+    position: relative;
+    display: flex;
+    width: 150px;
+    border: 1px solid grey;
+    padding: 3px 10px;
+    border-radius: 3px;
+    gap: 10px;
+    background: #74bd7f;
+}
+
+.jcf-select-text {
+    flex-grow: 1;
+}
+
+.jcf-select-opener {
+    width: 8px;
+    height: 8px;
+    margin: 3px 0 0;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(-45deg);
+}
+
+.jcf-select-drop {
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+.jcf-select-drop ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: #fff;
+}
+
+.jcf-option {
+    display: block;
+    padding: 5px;
+}
+
+.jcf-selected {
+    background: green;
+}
+
+.jcf-hover {
+    background: lightgreen;
+}

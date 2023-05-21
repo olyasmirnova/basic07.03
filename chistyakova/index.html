@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="js/jcf.js"></script>
+    <script src="js/jcf.select.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form action="get" class="contact-form">
+            <div class="row">
+                <input type="radio" name="gender" id="male" class="radio-box">
+                <label for="male" class="label-male">Male</label>
+            </div>
+            <div class="row">
+                <input type="radio" name="gender" id="female" class="radio-box">
+                <label for="female" class="label-male">Female</label> 
+            </div>
+            <div class="row-box">
+                <label for="city" class="label-city">Choose your city</label>
+                <select class="row-select" id="city" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+                    <option>Kyiv</option>
+                    <option>Dnipro</option>
+                    <option>Kharkiv</option>
+                    <option>Odessa</option>
+                    <option>Lviv</option>
+                </select>
+            </div>
+            <div class="row">
+                <input type="checkbox" name="confirm" id="confirm" checked class="checkbox">
+                <label for="confirm" class="label">Yes, I agree</label>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
