@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('../font/Lato-Regular.woff2') format('woff2'),
+    url('../font/Lato-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    margin: 0;
+    font: 18px/22px 'Lato',sans-serif;
+    color: #fff;
+    background: #fff;
+}
+.nav {
+    background: #333333;
+    border-bottom: 5px solid #009eff;
+}
+.nav-list {
+    width: 900px;
+    margin: 30px auto 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 70px
+}
+.nav-item {
+    position: relative;
+}
+.nav-link {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 37px 20px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+.nav-item:hover .nav-link{
+    background: #009eff;
+    color: #fff;
+}
+.drop-down {
+    width: 380px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #009eff;
+    border: 3px solid #0084ef;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 0 0 5px 5px;
+    display: none;
+}
+.nav-item:hover .drop-down {
+    display: block;
+
+}
+.new-item,.has-item,
+.drop-item {
+    border-bottom: 2px solid #0084ef;
+}
+.has-link,.new-link,
+.drop-link {
+    display: block;
+    padding: 39px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.new-link:hover,
+.has-link:hover,
+.drop-link:hover {
+    background: #00a9ff ;
+    color: #ffffff;
+}
+.has-drop.nav-link {
+    padding-right: 30px;
+}
+.drop-item {
+    position: relative;
+}
+.has-drop::after {
+    position: absolute;
+    content: '+';
+    top: 35px;
+    right: 32px;
+
+}
+.new-list ,
+.drop-list {
+      width: 380px;
+      position: absolute;
+      top: 0;
+      left: 100%;                 
+      background: #009eff;
+      border: 2px solid #0084ef;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      border-radius: 0 0 5px 5px;
+      display: none;
+}
+.drop-item:hover .new-list ,
+.drop-item:hover .drop-list {
+    display: block;
+}
+
+
+
+
+
+
+

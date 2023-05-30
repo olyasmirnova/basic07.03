@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  color: #525252;
+  background: #ffffff;
+  font: 12px/14px "Trebuchet MS";
+}
+.header-box {
+  border-bottom: 1px solid #ffffff;
+  background: linear-gradient(
+    180deg,
+    rgba(198, 15, 0, 1) 0%,
+    rgba(147, 8, 0, 1) 100%
+  );
+}
+.container {
+  width: 902px;
+  margin: 0 auto;
+}
+.logo {
+  width: 265px;
+  height: 66px;
+  background: #ffffff;
+  display: block;
+  text-align: center;
+  padding-top: 4px;
+  box-sizing: border-box;
+}
+.nav-box {
+  color: #ffffff;
+  background: #000000;
+  margin-bottom: 19px;
+}
+.nav-list {
+  margin: 0;
+  margin-left: 220px;
+  list-style: none;
+  font-size: 0;
+}
+.nav-item {
+  display: inline-block;
+  font-size: 11px;
+  line-height: 16px;
+}
+.nav-link {
+  display: block;
+  text-decoration: none;
+  padding: 7px 9px;
+  color: #ffffff;
+  font: bold 11px/16px "Trebuchet MS";
+}
+.nav-link:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+.main {
+  float: right;
+  display: inline;
+  width: 880px;
+  margin-right: 20px;
+}
+.main-img {
+  border: 12px solid #dfdfdf;
+  margin-bottom: 38px;
+}
+.body-container {
+  width: 1440px;
+  margin: 0 auto;
+}
+.heading {
+  margin: 0 0 0 19px;
+  color: #ed1a2d;
+  font: 22px/26px "Trebuchet MS";
+}
+.nav-list-second {
+  margin: 0;
+  list-style: none;
+  font: 10px/14px "Trebuchet MS";
+  padding-left: 19px;
+  color: #928564;
+}
+.nav-link-second {
+  text-decoration: none;
+  display: block;
+  color: #928564;
+  margin-bottom: 26px;
+}
+.nav-item-second {
+  display: inline;
+  font-size: 10px;
+  line-height: 14px;
+}
+.paragraph {
+  font: 12px/16px "Trebuchet MS";
+  color: #525252;
+  margin: 0 0 0 19px;
+}
+.aside {
+  float: left;
+  text-align: center;
+  /* margin: 60px 56px 0;  */
+  width: auto;
+  border: 1px solid #fb0606;
+  display: inline-block;
+  margin-left: 290px;
+}
+.aside-list {
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+  width: 220px;
+}
+.aside-item {
+  display: inline-block;
+  margin: 10px 10px;
+  color: #fd0202;
+}
+.aside-link {
+  display: block;
+  padding: 5px 10px 5px 10px;
+  width: 175px;
+  font: bold 16px/20px "Trebuchet MS";
+  background: #928564;
+  color: #ffffff;
+  text-decoration: none;
+}
+.aside-link:hover {
+  color: #ffffff;
+  background: #ed1a2d;
+}
